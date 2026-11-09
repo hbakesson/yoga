@@ -8,6 +8,8 @@ struct WeekScheduleView: View {
 
     @State private var weekOffset = 0
     @State private var selected: Session?
+    /// The card that opened the detail view; focus returns here when it closes.
+    @State private var returnFocus: FocusTarget?
     @FocusState private var focus: FocusTarget?
 
     enum FocusTarget: Hashable {
@@ -36,9 +38,21 @@ struct WeekScheduleView: View {
         #if DEBUG
         .onChange(of: focus) { _, new in print("[Yoga] focus → \(String(describing: new))") }
         #endif
-        .fullScreenCover(item: $selected) { session in
+        .fullScreenCover(item: $selected, onDismiss: restoreFocus) { session in
             SessionDetailView(session: session, studio: schedule.studio)
         }
+    }
+
+    private func open(_ session: Session) {
+        returnFocus = .session(session.id)
+        selected = session
+    }
+
+    private func restoreFocus() {
+        guard let target = returnFocus else { return }
+        // Wait one turn of the run loop so the focus engine has re-entered this
+        // screen; otherwise defaultFocus wins and we land on the next class.
+        Task { @MainActor in focus = target }
     }
 
     // MARK: Header
@@ -133,7 +147,7 @@ struct WeekScheduleView: View {
                 ForEach(days) { day in
                     DayColumn(
                         day: day, now: now, nextID: next?.id,
-                        focus: $focus, onSelect: { selected = $0 })
+                        focus: $focus, onSelect: open)
                 }
             }
             .padding(.bottom, 40)

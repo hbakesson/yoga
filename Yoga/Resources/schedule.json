@@ -1,0 +1,74 @@
+{
+  "season": "Höst 2026",
+  "source": "https://www.hotyogasthlm.se/wp-content/uploads/2026/06/Hot-Yoga-Stockholm-Host-2026-A4.pdf",
+  "studio": {
+    "name": "Hot Yoga Stockholm",
+    "street": "Gotlandsgatan 53B",
+    "city": "116 65 Stockholm"
+  },
+  "rooms": [
+    { "id": "stora", "name": "Stora salen", "climate": "29–39 °C", "booking": "Drop-in" },
+    { "id": "lilla", "name": "Lilla salen", "climate": "Rumstempererad", "booking": "Bokning krävs" }
+  ],
+  "classTypes": [
+    { "code": "BY",   "name": "Bikram Hot Yoga",            "color": "#5A6640", "family": "Hot",  "summary": "En fast sekvens med 26 yogapositioner och två andningsövningar." },
+    { "code": "SBY",  "name": "Silent Bikram Hot Yoga",     "color": "#C6EFA0", "family": "Hot",  "summary": "Bikramklassen på 90 minuter, ledd i tystnad. Bara andningen och din egen rytm." },
+    { "code": "BYV",  "name": "Bikram Hot Yoga Variation",  "color": "#9DBF85", "family": "Hot",  "summary": "Välbekant grund, nya variationer. Bikramklassen med lekfulla avvikelser." },
+    { "code": "BYIA", "name": "Bikram Hot Yoga I/A",        "color": "#DCEBD2", "family": "Hot",  "summary": "För dig med vana. Inspirerad av Bikrams avancerade serie, med hands-on-hjälp om du vill." },
+    { "code": "HH",   "name": "Hot Hatha",                  "color": "#6B94C2", "family": "Hot",  "summary": "Andning, styrka, stretch och närvaro i behaglig värme." },
+    { "code": "HY",   "name": "Hot Yin",                    "color": "#B3C6DF", "family": "Hot",  "summary": "Stillhet och återhämtning, där värmen hjälper dig att slappna av på djupet." },
+    { "code": "HP",   "name": "Hot Pilates",                "color": "#9B2BE0", "family": "Hot",  "summary": "Ett energifyllt och stärkande komplement till yogan. Styrka och stabilitet, passar alla." },
+    { "code": "HMS",  "name": "Hot Mobility & Strength",    "color": "#EE45CF", "family": "Hot",  "summary": "Styrka, rörlighet och funktionell rörelse i ett varmt rum." },
+    { "code": "WV",   "name": "Warm Vinyasa",               "color": "#94400F", "family": "Warm", "summary": "Rörelse i takt med andningen, med kriyas, bandhas och pranayama." },
+    { "code": "WSV",  "name": "Warm Sadhana Vinyasa",       "color": "#F08B45", "family": "Warm", "summary": "En längre praktik med vinyasa, kriyas, bandhas, drishti och pranayama. Ibland filosofi, meditation och mantra." },
+    { "code": "WSFB", "name": "Warm Slow Flow & Breath",    "color": "#D5869C", "family": "Warm", "summary": "En långsammare, andningsfokuserad praktik." },
+    { "code": "WYN",  "name": "Warm Yoga Nidra",            "color": "#B4486C", "family": "Warm", "summary": "Guidad yogisk sömn och djup avslappning." },
+    { "code": "RR",   "name": "Rest & Renew",               "color": "#F4C53A", "family": "Calm", "summary": "Lugn klass med mjuk rörelse, yin- och restorative-inspirerade stunder och avslappning." }
+  ],
+  "sessions": [
+    { "day": "mån", "start": "07.00", "minutes": 60, "classes": ["HH"] },
+    { "day": "mån", "start": "09.30", "minutes": 75, "classes": ["WV"], "level": "B/I" },
+    { "day": "mån", "start": "12.00", "minutes": 60, "classes": ["BYV"] },
+    { "day": "mån", "start": "17.00", "minutes": 75, "classes": ["HH"] },
+    { "day": "mån", "start": "18.00", "minutes": 75, "classes": ["RR"], "room": "lilla" },
+    { "day": "mån", "start": "18.30", "minutes": 60, "classes": ["BY"] },
+
+    { "day": "tis", "start": "09.30", "minutes": 60, "classes": ["HH"] },
+    { "day": "tis", "start": "12.00", "minutes": 60, "classes": ["HP"] },
+    { "day": "tis", "start": "16.00", "minutes": 75, "classes": ["WV"], "level": "B/I" },
+    { "day": "tis", "start": "17.30", "minutes": 75, "classes": ["BY"] },
+    { "day": "tis", "start": "19.00", "minutes": 75, "classes": ["HH"] },
+
+    { "day": "ons", "start": "06.45", "minutes": 75, "classes": ["BY"] },
+    { "day": "ons", "start": "09.30", "minutes": 60, "classes": ["BY"] },
+    { "day": "ons", "start": "12.00", "minutes": 75, "classes": ["WV"], "level": "B/I" },
+    { "day": "ons", "start": "17.00", "minutes": 60, "classes": ["BY"] },
+    { "day": "ons", "start": "18.30", "minutes": 75, "classes": ["WV"], "level": "B/I" },
+    { "day": "ons", "start": "20.00", "minutes": 60, "classes": ["HY"] },
+
+    { "day": "tor", "start": "09.30", "minutes": 75, "classes": ["HH"] },
+    { "day": "tor", "start": "12.00", "minutes": 60, "classes": ["BY"] },
+    { "day": "tor", "start": "16.00", "minutes": 60, "classes": ["HH"],  "weeks": "even" },
+    { "day": "tor", "start": "16.00", "minutes": 60, "classes": ["HMS"], "weeks": "odd" },
+    { "day": "tor", "start": "17.30", "minutes": 75, "classes": ["WV"], "level": "I" },
+    { "day": "tor", "start": "19.00", "minutes": 90, "classes": ["BY", "WYN"], "note": "60 min Bikram + 30 min Yoga Nidra" },
+
+    { "day": "fre", "start": "06.45", "minutes": 75, "classes": ["WV"], "level": "I" },
+    { "day": "fre", "start": "12.00", "minutes": 60, "classes": ["HH"] },
+    { "day": "fre", "start": "15.30", "minutes": 70, "classes": ["HY"] },
+    { "day": "fre", "start": "17.00", "minutes": 90, "classes": ["SBY"], "weeks": "even" },
+    { "day": "fre", "start": "17.00", "minutes": 90, "classes": ["BY"],  "weeks": "odd" },
+
+    { "day": "lör", "start": "08.30", "minutes": 90,  "classes": ["WV"],  "level": "B/I", "weeks": "even" },
+    { "day": "lör", "start": "08.30", "minutes": 90,  "classes": ["WSV"], "level": "B/I", "weeks": "odd" },
+    { "day": "lör", "start": "10.30", "minutes": 60,  "classes": ["BY"] },
+    { "day": "lör", "start": "12.00", "minutes": 75,  "classes": ["HY"],   "weeks": "even" },
+    { "day": "lör", "start": "12.00", "minutes": 105, "classes": ["BYIA"], "weeks": "odd" },
+    { "day": "lör", "start": "14.00", "minutes": 75,  "classes": ["HH"] },
+
+    { "day": "sön", "start": "10.00", "minutes": 90, "classes": ["BY"] },
+    { "day": "sön", "start": "12.00", "minutes": 75, "classes": ["HH"] },
+    { "day": "sön", "start": "14.30", "minutes": 60, "classes": ["BY"] },
+    { "day": "sön", "start": "16.00", "minutes": 60, "classes": ["WSFB"] }
+  ]
+}

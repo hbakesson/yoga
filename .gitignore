@@ -1,0 +1,9 @@
+# Xcode
+xcuserdata/
+DerivedData/
+build/
+*.xcuserstate
+.DS_Store
+
+# Mindbody API credentials (see README)
+Yoga/Resources/Mindbody.plist
